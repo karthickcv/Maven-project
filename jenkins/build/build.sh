@@ -3,7 +3,7 @@
 echo "**************************************"
 echo "********COPYING JAR*******************"
 echo "**************************************"
-cp -f java-app/target/*.jar /home/hutson/Platform/Jenkins/pipeline/jenkins/build
+cp -f /home/hutson/Platform/Jenkins/pipeline/java-app/target/*.jar /home/hutson/Platform/Jenkins/pipeline/jenkins/build
 echo "The Jar file has been successfully copied !!!"
 echo "************************************************"
 echo "********BUILDING DOCKER IMAGE*******************"
