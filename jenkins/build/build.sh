@@ -4,9 +4,10 @@
 echo "**************************************"
 echo "********COPYING JAR*******************"
 echo "**************************************"
-cp  /java-app/target/*.jar /jenkins/build
+cp -f /home/hutson/Platform/Jenkins/pipeline/java-app/target/*.jar /home/hutson/Platform/Jenkins/pipeline/jenkins/build
+
 echo "************************************************"
 echo "********BUILDING DOCKER IMAGE*******************"
 echo "***********************************************"
 
-cd /jenkins/build && docker-compose -f docker-compose-build.yml build --no-cache
+cd /home/hutson/Platform/Jenkins/pipeline/jenkins/build && docker-compose -f docker-compose-build.yml build --no-cache
