@@ -4,7 +4,7 @@
 echo "**************************************"
 echo "********COPYING JAR*******************"
 echo "**************************************"
-cp -f /home/hutson/Platform/Jenkins/pipeline/java-app/target/*.jar /home/hutson/Platform/Jenkins/pipeline/jenkins/build
+cp -f /home/hutson/Platform/Jenkins/jenkins_data/workspace/pipeline-Maven-Docker/java-app/target/*.jar /home/hutson/Platform/Jenkins/pipeline/jenkins/build
 
 echo "************************************************"
 echo "********BUILDING DOCKER IMAGE*******************"
