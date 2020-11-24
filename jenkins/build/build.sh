@@ -1,11 +1,12 @@
 #! /bin/bash
 
+
 echo "**************************************"
 echo "********COPYING JAR*******************"
 echo "**************************************"
-cp -r /home/hutson/Platform/Jenkins/pipeline/java-app/target/*.jar $PWD
+cp -f /home/hutson/Platform/Jenkins/pipeline/java-app/target/*.jar /home/hutson/Platform/Jenkins/pipeline/jenkins/build
 echo "************************************************"
 echo "********BUILDING DOCKER IMAGE*******************"
-echo "************************************************"
+echo "***********************************************"
 
 cd $PWD && docker-compose -f docker-compose-build.yml build --no-cache
