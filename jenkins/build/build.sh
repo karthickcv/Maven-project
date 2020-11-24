@@ -9,4 +9,4 @@ echo "************************************************"
 echo "********BUILDING DOCKER IMAGE*******************"
 echo "***********************************************"
 
-cd $PWD && docker-compose -f docker-compose-build.yml build --no-cache
+cd /home/hutson/Platform/Jenkins/pipeline/jenkins/build && docker-compose -f docker-compose-build.yml build --no-cache
